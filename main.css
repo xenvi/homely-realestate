@@ -1,0 +1,321 @@
+body, html, * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    scroll-behavior: smooth;
+}
+html {
+    overflow-x: hidden;
+}
+body {
+    min-height: 100%;
+    position: relative;
+}
+/*
+.displaynone {
+    transition: all 0.3s ease-in-out;
+    display: none;
+}
+.displayblock {
+    transition: all 0.3s ease-in-out;
+    display: block;
+} */
+
+/*** BODY ***/
+
+/** NAV **/
+.navbar {
+    z-index: 10;
+    transition: 0.4s;
+}
+
+.nav-link {
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.redirect-nav {
+    BOX-SHADOW: 0 0.4rem 0.8em #ddd;
+    padding-bottom: 1rem;
+}
+
+#login {
+    position: fixed;
+    height: 100vh;
+    width: 25rem;
+    z-index: 100;
+    right: 0;
+    top: 0;
+    background: rgba(255,255,255,1);
+    right:-25rem;
+    transition: 0.6s all linear;
+    box-shadow: 0 0 0.3em #ddd;
+}
+
+#login.active {
+    right:0;
+    transition: 0.6s all linear;
+}
+
+.slide-toggle {
+    margin-left: -6rem;
+}
+
+.exit-btn {
+    position: absolute;
+    font-size: 1.5rem;
+    color: #787787;
+    top: 2.5%;
+    left: 8%;
+    cursor: pointer;
+}
+
+.sidepage-nav {
+    box-shadow: 0 0.1em 0.3em #787787;
+    background: #fff;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+/** LANDING PAGE **/
+.landingpage-container {
+    width: 100%;
+    height: 85vh;
+    background:url('../images/indoorapartment_cool.jpg') no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-attachment: fixed;
+    top: 0;
+}
+
+.landing-text {
+    position:relative;
+    top: 40%;
+    margin-top: -5em;
+    font-size: 1.5em;
+    text-shadow: 0 0 0.2em #fff;
+}
+
+.landing-title {
+    font-size: 2em;
+}
+
+.landing-subtext {
+    font-size: 0.7em;
+    letter-spacing: 1.5px;
+}
+
+.darkoverlay {
+    width: 100%;
+    height: 85vh;
+    background: #000;
+    opacity: 0.2;
+    position: absolute;
+}
+
+.fa-angle-down {
+    text-shadow: 0 0 0.2em #fff;
+    font-size: 2em;
+    margin-top: 3em;
+    animation: bounce 2s infinite;
+}
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-0.5em);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+.search-submit {
+    position: relative;
+    width: 3.6rem;
+    height: 3.6rem;
+    font-size: 1rem;
+    border: 0.1em solid #000;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+    margin-top: -0.3rem;
+}
+.search-submit:hover {
+    background: rgba(0,0,0,0.8);
+    transition: all 0.3s ease-in-out;
+}
+.landing-search {
+    height: 3rem;
+    width: 26.5rem;
+    font-size: 1.2rem;
+    padding: 1rem !important;
+    border: 0.1em solid #fff;
+    background: rgba(255,255,255,0.8);
+}
+.search-container {
+    margin-top: 1rem;
+}
+
+/** CONTENT **/
+#content {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding-top: 5rem;
+}
+
+.container {
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 2rem;
+}
+
+.section1 {
+    background: light-grey;
+}
+
+h1 {
+    text-align: center;
+    color: #000;
+    text-shadow: 0 0 0.1em #000;
+    padding: 0 0 1rem 0;
+}
+
+/* NEWEST LISTINGS SECTION */
+.newest-listings {
+    width: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.box1 {
+    width: 22rem;
+    height: 17rem;
+}
+
+.pic {
+    width: 100%;
+    height: 14rem;
+    border-radius: 0.2em;
+    box-shadow: 0 0 1.5em rgba(153, 153, 153, 0.6);
+}
+
+.descr {
+    width: 80%;
+    height: 6rem;
+    background: #fff;
+    left: 10%;
+    position: relative;
+    margin-top: -3rem;
+    padding: 1em 1.5em;
+    font-size: 0.9rem;
+    box-shadow: 0 0 0.5em rgba(255, 255, 255, 1);
+}
+
+.fa-bed, .fa-bath {
+    color: #787787;
+}
+
+.addy {
+    font-weight: bold;
+}
+
+.price {
+    color: #fff;
+    font-size: 1.7rem;
+    padding: 0.5rem 1rem;
+    text-shadow: 0 0 0.5rem #000;
+    font-weight: bold;
+}
+.sale-id {
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    text-shadow: 0 0 0.5rem #000;
+    font-weight: bold;
+    margin-top: -2.5rem;
+    position: absolute;
+}
+.sqft {
+    font-style: italic;
+}
+
+.viewmore {
+    text-align: center;
+}
+
+.boxpic1 {
+    background:url('../images/sunnyside-house.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*** FOOTER ***/
+.footer-container {
+    width: 100%;
+    height: 55vh;
+    background: rgba(0,0,0,0.8);
+    z-index: 55;
+    text-align: center;
+    color: #fff;
+}
+
+hr {
+    background: #dddddd;
+}
+
+.footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+}
+.contact {
+    padding-top: 3rem;
+}
+
+.fab {
+    font-size: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/** scrollbar **/
+
+/* width */
+::-webkit-scrollbar {
+    width: 1.2em;
+  }
+  
+  /* track */
+  ::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.5);
+    box-shadow: inset 0 0 0.3em #fff;
+  }
+  
+  /* handle */
+  ::-webkit-scrollbar-thumb {
+   /* border-radius: 40px; */
+    box-shadow: inset 0 0 0.3em #ddd;
+    background: #fff;
+    background: linear-gradient(rgb(189,220,255), lightpink);
+  }
+  
+  /* handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(rgb(129,182,242), rgb(255, 135, 153));
+  }
+  /** end scrollbar **/
