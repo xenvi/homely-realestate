@@ -1,0 +1,111 @@
+/**** LOGIN ****/
+
+.login-container, .signup-container {
+    width: 100%;
+    padding: 7rem 0;
+    margin-top: -2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-form {
+    width: 25rem;
+    min-height: 24rem;
+    left: 50%;
+    margin-left: -12.5rem;
+    position: relative;
+    border-radius: 0.5rem;
+    padding-left: 4rem;
+    padding-top: 4rem;
+    margin-top: -3rem;
+}
+.login-link {
+    color: #000;
+}
+.login-link:hover {
+    color: #ddd;
+}
+
+.alert-login {
+    width: 18rem;
+}
+.close-btn {
+    position: relative;
+    cursor: pointer;
+}
+.input {
+    width: 18rem;
+}
+
+.enter {
+    position: relative;
+    border: none;
+    BOX-SHADOW: 0 0 0.5em #ddd;
+    margin-left: 0.5rem;
+}
+.enter:focus {
+    BOX-SHADOW: 0 0 0.5em #000;
+}
+
+.login-title {
+    position: relative;
+    left: 35%;
+    text-shadow: none;
+    font-weight: bold;
+    font-size: 2.2rem;
+    color: #000;
+    text-shadow: 0 0 0.1em #787787;
+}
+hr {
+    position: relative;
+    width: 4rem;
+    height: 0.2rem;
+    left: 41%;
+    margin-top: 0rem;
+    background: #787787;
+}
+
+.forgot-pass, .to-signup {
+    position: relative;
+    color: #000;
+    transition: 0.2s all ease-in-out;
+}
+.forgot-pass {
+    left: 58%;
+}
+.to-signup {
+    left: 34.5%;
+    font-weight: bold;
+}
+.forgot-pass:hover, .to-signup:hover {
+    color: #787787;
+    text-decoration: none;
+    transition: 0.2s all ease-in-out;
+}
+
+.submit-btn {
+    position: relative;
+    width: 8rem;
+    left: 32%;
+}
+
+#loggedin {
+    margin-top: -0.5rem;
+}
+#loggedin p {
+    position: relative;
+    float: left;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+}
+
+.logout-btn {
+    position: relative;
+    float: right;
+}
+
+.alert-logout {
+    z-index: 150;
+    text-align: center;
+    width: 100%;
+    display: none;
+}
