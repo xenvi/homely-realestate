@@ -1,0 +1,310 @@
+.listing-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2.5em;
+    text-align: center;
+}
+
+.listing-title {
+    font-size: 2rem;
+    color: #777777;
+}
+
+.form-container {
+    background: #fff;
+    width: 80%;
+    height: 80%;
+    position: relative;
+    left: 50%;
+    margin-left: -40%;
+    padding: 2.5rem;
+    box-shadow: 0 0 0.5em #fff;
+}
+
+#listing-body {
+    background: #eff0ff;
+}
+
+/* The customcheck */
+.customcheck {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #777777;
+}
+
+/* Hide the browser's default checkbox */
+.customcheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+.inner-checkmark {
+    background-color: #fff;
+    box-shadow: 0 0 0.1em #777;
+}
+
+.customcheck:hover input ~ .checkmark {
+    background-color: #ccc;
+    transition: all 0.2s ease-in-out;
+}
+
+.customcheck input:checked ~ .checkmark {
+    background-color: #94bdff;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.customcheck input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.customcheck .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in-out;
+}
+/* end custom checkbox */
+
+#titleLabel {
+    color: dodgerblue;
+}
+
+placeholder {
+    font-size:  0.8rem;
+}
+
+.select, .number {
+    height: 3.5rem;
+}
+
+.number {
+    text-align: right;
+    padding-right: 3.8rem;
+}
+.sf {
+    position: absolute;
+    right: 0;
+    margin-top: -2.55rem;
+    color: #777777;
+    font-size: 1.1rem;
+    margin-right: 1.5rem;
+}
+
+.inputText, input[type=email], input[type=date], textarea {
+    height: 3.5rem;
+    padding-left: 4rem;
+    transition: all 0.3s ease-in-out;
+}
+.listing-icon {
+    position: absolute;
+    left: 0;
+    color: #777777;
+    top: 0;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+.inputWithIcon {
+    position: relative;
+}
+.inputText:focus + .listing-icon, input[type=email]:focus + .listing-icon, textarea:focus + .listing-icon, input[type=text]:focus + .sf, input[type=date]:focus + .listing-icon {
+    color: dodgerblue;
+    transition: all 0.3s ease-in-out;
+}
+.fa-calendar-alt {
+    margin-top: 2rem;
+}
+
+.right-number {
+    padding-right: 3rem;
+}
+.rent-number {
+    padding-right: 5rem;
+}
+
+.typeoflist {
+    color: #777777;
+    font-size: 1.2rem;
+}
+.check-listing {
+    position: relative;
+    text-align: center;
+}
+
+.flex-list {
+    justify-content: center;
+}
+
+/* custom select */
+.custom-select {
+    position: relative;
+  }
+
+.select {
+    font-size: 1.1rem;
+    padding: 1rem;
+    transition: all .3s ease-in-out;
+}
+.select:hover {
+    cursor: pointer;
+    background: dodgerblue;
+    color: #fff;
+    border: none;
+    transition: all .3s ease-in-out;
+}
+.select:focus, .select.open {
+    outline: 0 !important;
+    border: none !important;
+    overflow-x: hidden !important;
+}
+option {
+    padding: 1rem !important;
+    background: #fff;
+    color: #777777;
+    transition: all .3s ease-in-out;
+}
+option:hover {
+    background: dodgerblue;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+
+/* end custom select */
+
+
+    .form-hr {
+        width: 100%;
+        height: 0.3em;
+        border: none;
+        position: relative;
+        left: 0;
+        background: #eee;
+    }
+    .innerform-hr {
+        width: 100%;
+        height: 0.4em;
+        position: relative;
+        left: 0;
+        background: #fff;
+        border: none;
+    }
+
+    #other-info {
+        background: #eff0ff;
+        width: 100%;
+        height: 100%;
+        padding: 3rem;
+    }
+
+    .optional {
+        position: absolute;
+        margin-top: -1rem;
+        margin-left: -1.5rem;
+    }
+    .selectone-notice {
+        position: absolute;
+        margin-top: -0.5rem;
+        margin-left: -1.5rem;
+    }
+
+    #desc {
+        padding: 1rem 5rem;
+    }
+
+    /* custom file upload */
+
+    #file-upload {
+        position: absolute;
+        left: 0;
+        width:0;
+        height:0;
+        background: red;
+    }
+    .custom-file-upload {
+        border: 1px solid dodgerblue;
+        color: dodgerblue;
+        display: inline-block;
+        padding: 0.8rem 1.6rem;
+        cursor: pointer;
+        font-size: 1rem;
+        border-radius: 4px;
+        transition: all 0.3s ease-in-out;
+    }
+    .custom-file-upload:hover {
+        background: dodgerblue;
+        color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+    .photos-small {
+        position: absolute;
+        margin-top: -0.5rem;
+        margin-left: -7.5rem;
+    }
+    .upload-preview-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #file-selected {
+        display: block;
+        color: #777777;
+        width: 25rem;
+        height: 2rem;
+        padding-top: 0.75rem;
+    }
+
+    #image {
+        padding-top: 1rem;
+        position: relative;
+        max-width: 25rem;
+        max-height: 25rem;
+    }
+    .upload-preview {
+        width: 25rem;
+        max-height: 28rem;
+        position: relative;
+        flex-direction: row;
+    }
+
+    .listing-submit-btn {
+        position: relative;
+        margin-top: -0.75rem;
+    }
