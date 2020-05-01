@@ -9,9 +9,9 @@ TECHNOLOGIES IMPLEMENTED:
 - MySQL / phpMyAdmin
 
 TO DO:
-> Make Google Maps API work
-> Searchable locations
-> Sort listings by specifications
-> Improve design interface
-> Add functional automated email for "forgot password"
-> Improve layout of individual listing pages
+- Make Google Maps API work
+- Searchable locations
+- Sort listings by specifications
+- Improve design interface
+- Add functional automated email for "forgot password"
+- Improve layout of individual listing pages
