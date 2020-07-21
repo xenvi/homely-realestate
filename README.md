@@ -1,5 +1,5 @@
 # HOMELY - Buying and Selling homes made easy.
-A mock real-estate web application designed to make searching through real estate listings and rental properties easy. Users are able to view posted listings and add their own listings to the database.
+A real-estate web application designed to make searching through real estate listings and rental properties easy. Users are able to view posted listings and add their own listings to the database.
 
 TECHNOLOGIES IMPLEMENTED:
 - HTML/CSS
